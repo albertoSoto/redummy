@@ -1,3 +1,7 @@
 # redummy
 
-asd
+TODO
+
+## shortcuts
+
+- control + shift + o: Reimport

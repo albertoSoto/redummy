@@ -1,0 +1,13 @@
+<info date="15/10/2018">
+    <airports>
+        <apt code="PMI">Palma de Mallorca</apt>
+        <apt code="VLC">Valencia</apt>
+        <apt code="CRN"><![CDATA[Coruña]]]]></apt>
+    </airports>
+    <flights>
+        <flight code="UX1234" ori="PMI" dst="VLC" departure="15:00" arrival="15:30" vacancies="15"></flight>
+        <flight ori="PMI" dst="VLC" departure="15:00" arrival="15:30" vacancies="15"></flight>
+        <flight ori="PMI" dst="VLC" departure="15:00" arrival="15:30" vacancies="15"></flight>
+    </flights>
+</info>
+

@@ -1,0 +1,14 @@
+<vuelos id="1" fecha="15/10/2018">
+    <vuelo>
+        <origen code="PMI">Palma de Mallorca</origen>
+        <destino code="VLC">Valencia</destino>
+        <hs></hs>
+        <h_llegada></h_llegada>
+    </vuelo>
+    <vuelo>
+        <origen code="PMI">Palma de Mallorca</origen>
+        <destino code="VLC">Valencia</destino>
+        <hs></hs>
+        <h_llegada></h_llegada>
+    </vuelo>
+</vuelos>
