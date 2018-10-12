@@ -1,5 +1,7 @@
 package com.iesemilidarder.asoto.data;
 
+import com.iesemilidarder.asoto.AppConstants;
+import com.iesemilidarder.asoto.exception.IESMyException;
 import com.sun.istack.internal.localization.NullLocalizable;
 
 /**
@@ -12,7 +14,32 @@ public abstract class Vehicle {
     private Integer numWheels;
     private Double price;
 
+    public String getColor() {
+        return color;
+    }
 
+    public void setColor(String color) {
+        this.color = color;
+    }
+
+    public Integer getNumWheels() {
+        return numWheels;
+    }
+
+    public void setNumWheels(Integer numWheels) {
+        if (numWheels == null || numWheels > AppConstants.MAX_WHEELS) {
+            throw new IESMyException("Demasiadas ruedas nen!");
+        }
+        this.numWheels = numWheels;
+    }
+
+    public Double getPrice() {
+        return price;
+    }
+
+    public void setPrice(Double price) {
+        this.price = price;
+    }
 
     public abstract void start();
 
