@@ -15,8 +15,8 @@ public class Launcher {
         try {
             SystemUtilHelper.consolePrint("Concesionario brumbrum App 2.0");
             Moto moto = new Moto();
-            moto.setNumWheels(9);
             moto.setPrice(123.45);
+            moto.setNumWheels(9);
             moto.setColor("Blanco");
             System.out.println("Ruedas:" + moto.getNumWheels());
             moto.start();
