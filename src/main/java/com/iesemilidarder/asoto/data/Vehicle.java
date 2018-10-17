@@ -10,9 +10,18 @@ import com.sun.istack.internal.localization.NullLocalizable;
  * By berto. 04/10/2018
  */
 public abstract class Vehicle {
+    private String name;
     private String color;
     private Integer numWheels;
     private Double price;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
 
     public String getColor() {
         return color;
