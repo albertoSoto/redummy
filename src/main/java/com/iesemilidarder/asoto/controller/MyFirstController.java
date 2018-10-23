@@ -17,7 +17,7 @@ public class MyFirstController {
     @RequestMapping("/car")
     public Vehicle getCar(@RequestParam(value = "name", defaultValue = "BrumBrum") String name) {
         Car car = new Car();
-
+        car.setName(name);
         return car;
     }
 }
