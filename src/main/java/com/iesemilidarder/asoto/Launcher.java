@@ -2,6 +2,7 @@ package com.iesemilidarder.asoto;
 
 import com.iesemilidarder.asoto.data.Moto;
 import com.iesemilidarder.asoto.data.Vehicle;
+import org.apache.commons.lang3.StringUtils;
 
 
 /**
@@ -17,13 +18,23 @@ public class Launcher {
             Moto moto = new Moto();
             moto.setPrice(123.45);
             moto.setNumWheels(9);
-            moto.setColor("Blanco");
+            //moto.setColor("Blanco");
             System.out.println("Ruedas:" + moto.getNumWheels());
             moto.start();
             SystemUtilHelper.consolePrint("pista que voy!");
             moto.brake();
             Vehicle aux = new Moto();
             SystemUtilHelper.consolePrint("yuhu");
+
+            String a = null;
+            if (StringUtils.isEmpty(moto.getColor())) {
+                //entro aqui
+                moto.setColor("verde");
+            }
+            if (a == null || a.length() == 0) {
+                //entro aqui
+            }
+
         } catch (Exception e) {
             SystemUtilHelper.logError(e);
         }
