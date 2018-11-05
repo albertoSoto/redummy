@@ -19,6 +19,13 @@ public class DataHelper {
         return data;
     }
 
+    public static void insert(Vehicle vehicle){
+        data.add(vehicle);
+    }
+
+    /**
+     * Inits the collection with silly data if empty
+     */
     private static void doInit(){
         if (data.isEmpty()){
             for(int i =0;i<50;i++){

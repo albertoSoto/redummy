@@ -29,6 +29,7 @@ public class MyFirstController {
     public Vehicle getCar(@RequestParam(value = "name", defaultValue = "BrumBrum") String name) {
         Car car = new Car();
         car.setName(name);
+        DataHelper.insert(car);
         return car;
     }
 }
