@@ -6,6 +6,12 @@ package com.iesemilidarder.asoto.data;
  * By berto. 08/10/2018
  */
 public class Car extends Vehicle {
+
+    public Car(String name){
+        super(name);
+        System.out.println("asd");
+    }
+
     /**
      * Starts the engine on my mode
      */

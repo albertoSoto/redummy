@@ -2,7 +2,7 @@ package com.iesemilidarder.asoto.data;
 
 import com.iesemilidarder.asoto.AppConstants;
 import com.iesemilidarder.asoto.exception.IESMyException;
-import com.sun.istack.internal.localization.NullLocalizable;
+import org.apache.commons.lang3.StringUtils;
 
 /**
  * com.iesemilidarder.asoto.data
@@ -14,6 +14,17 @@ public abstract class Vehicle {
     private String color;
     private Integer numWheels;
     private Double price;
+
+    protected Vehicle(){
+        //this(null);
+        //this("");
+        this(StringUtils.EMPTY);
+    }
+
+    protected Vehicle(String name) {
+        System.out.println("constructor super!");
+        this.name = name;
+    }
 
     public String getName() {
         return name;

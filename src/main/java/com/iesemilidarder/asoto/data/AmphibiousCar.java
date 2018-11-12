@@ -7,6 +7,10 @@ package com.iesemilidarder.asoto.data;
  */
 public class AmphibiousCar extends Car implements INavigation {
 
+    public AmphibiousCar(String name) {
+        super(name);
+    }
+
     public void doFloat() {
         doLog("Como mola como floto");
     }

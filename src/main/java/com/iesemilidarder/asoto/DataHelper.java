@@ -4,6 +4,7 @@ import com.iesemilidarder.asoto.data.Car;
 import com.iesemilidarder.asoto.data.Vehicle;
 
 import java.util.ArrayList;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -12,7 +13,7 @@ import java.util.List;
  * By berto. 31/10/2018
  */
 public class DataHelper {
-    private static List<Vehicle> data = new ArrayList<>();
+    private static List<Vehicle> data = new LinkedList<>();
 
     public static List<Vehicle> getData(){
         doInit();
@@ -29,7 +30,7 @@ public class DataHelper {
     private static void doInit(){
         if (data.isEmpty()){
             for(int i =0;i<50;i++){
-                Car car = new Car();
+                Car car = new Car("");
                 car.setName("Name"+i);
                 data.add(car);
             }
